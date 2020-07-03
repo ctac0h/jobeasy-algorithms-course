@@ -1,9 +1,11 @@
 """Find and replace a substring in a string for another substring.
 User enter from a keyboard a string and both substrings. """
 
+"""
 user_string = input("Enter a string: ")
 user_find_str = input("Enter what to replace: ")
 user_replace_str = input("Enter how to replace: ")
+"""
 
 
 def replace(string, find_str, replace_str):
@@ -22,7 +24,11 @@ def replace(string, find_str, replace_str):
     return result
 
 
-replace(user_string, user_find_str, user_replace_str)
+replace('aabbaaabba', 'aa', 'a')
+print('aabbaaabba'.replace('aa', 'a'))
+print(replace('aabbaaabba', 'aa', 'a') == 'aabbaaabba'.replace('aa', 'a'))
+
+#replace(user_string, user_find_str, user_replace_str)
 """
 replace('Look at my horse, my horse is amazing', 'horse', 'tractor')
 replace('aaaaaa', 'aa', 'b')
